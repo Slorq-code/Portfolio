@@ -13,6 +13,9 @@ let smtpTransport = nodemailer.createTransport({
     auth:{
         user:'andresfra65@gmail.com',
         pass:'LaNenePechocha2021',
+    },
+    tls:{
+        rejectUnauthorized: false,
     }
 })
 
@@ -34,11 +37,8 @@ let mailOptions = {
 }
 
 smtpTransport.sendMail(mailOptions, (err)=>{
-try {
-
-    console.log(mailOptions)
-    
-// if(err) return res.status(400).json({msg:'Please fill all the fields'})
+try {    
+ if(err) return res.status(400).json({msg:'Please fill all the fields'})
 res.status(200).json({msg:'Thank you for contacting Andres!'})
 } catch (err) {
     if(err) return res.status(500).json({msg:'There is server error'})
