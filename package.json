@@ -11,8 +11,7 @@
     "start": "node server.js"
   },
   "engines": {
-    "npm": ">=6.0.0",
-    "node": ">=14.17.0"
+    "node": "14.x"
   },
   "author": "",
   "license": "ISC",
