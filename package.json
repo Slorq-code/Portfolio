@@ -10,6 +10,10 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "start": "node server.js"
   },
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=14.17.0"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
