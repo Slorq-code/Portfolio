@@ -11,8 +11,8 @@ let smtpTransport = nodemailer.createTransport({
     service:'Gmail',
     port:465,
     auth:{
-        user:'andresfra65@gmail.com',
-        pass:'LaNenePechocha2021',
+        user:process.env.USER_EMAIL,
+        pass:process.env.PASS_EMAIL,
     },
     tls:{
         rejectUnauthorized: false,
