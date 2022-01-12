@@ -65,7 +65,7 @@ export default function AboutMe(props) {
                         onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
                         className="btn primary-btn">{""}Nex section{" "}</button>
 
-                        <a href= 'Andres Rodriguez.pdf' download='Andres Rodriguez.pdf'>
+                        <a href= 'https://drive.google.com/file/d/180Y66WRkt6qXFI-H5P6vwJnz5zGzS5T5/view?usp=sharing'>
                              <button className="btn highlighted-btn">Get resume</button>
                         </a>
                         </div>
